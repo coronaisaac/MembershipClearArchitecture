@@ -18,7 +18,8 @@ namespace Membership.Core
             this IServiceCollection services,
             Action<JwtOptions> jwtOptionsSetter)
         {
-            services.AddMembershipInteractors()
+            services
+              .AddMembershipInteractors()
               .AddMembershipPresenters()
               .AddMembershipController()
               .AddMembershipInternalServices(jwtOptionsSetter);

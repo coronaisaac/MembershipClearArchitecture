@@ -3,7 +3,6 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Membership.Abstractions\Membership.Abstractions.csproj" />
+    <ProjectReference Include="..\Membership.Shared\Membership.Shared.csproj" />
   </ItemGroup>
    
   <ItemGroup>

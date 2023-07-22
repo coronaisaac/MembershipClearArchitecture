@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.20" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Membership.Abstractions\Membership.Abstractions.csproj" />
+    <ProjectReference Include="..\Membership.Core\Membership.Core.csproj" />
+    <ProjectReference Include="..\Membership.ExceptionHandlerMiddleware\Membership.ExceptionHandlerMiddleware.csproj" />
+    <ProjectReference Include="..\Membership.RefreshTokenService.MemoryCache\Membership.RefreshTokenService.MemoryCache.csproj" />
+    <ProjectReference Include="..\Membership.Shared.MessageLocalizer\Membership.Shared.MessageLocalizer.csproj" />
+    <ProjectReference Include="..\Membership.Shared.Validators\Membership.Shared.Validators.csproj" />
+    <ProjectReference Include="..\Membership.UserManagerService.AspNetIdentity\Membership.UserManagerService.AspNetIdentity.csproj" />
+  </ItemGroup>
+
+</Project>

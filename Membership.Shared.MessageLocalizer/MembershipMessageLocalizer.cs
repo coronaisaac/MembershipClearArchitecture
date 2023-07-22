@@ -30,7 +30,12 @@ internal class MembershipMessageLocalizer : IMembershipMessageLocalizer
         {MessageKeys.DisplayConfirmPasswordMessage, "Confirmar contraseña:" },
         {MessageKeys.DisplayRegisterButtonMessage, "Registrar" },
         {MessageKeys.DisplayLoginButtonMessage, "Iniciar sesión" },
-        {MessageKeys.DisplayLogoutButtonMessage, "Cerrar sesión" }
+        {MessageKeys.DisplayLogoutButtonMessage, "Cerrar sesión" },
+        {MessageKeys.RegisterUserExceptionMessage, "Error al registrar el usuario" },
+        {MessageKeys.LoginUserExceptionMessage, "Las credenciales proporcionads son incorrectas" },
+        {MessageKeys.RefreshTokenCompromisedExceptionMessage, "El token de actualización fue comprometido" },
+        {MessageKeys.RefreshTokenExpiredExceptionMessage, "El token de actualización ha expirado" },
+        {MessageKeys.RefreshTokenNotFoundExceptionMessage, "El token de actualización no fue encontrado" },
 
     };
 

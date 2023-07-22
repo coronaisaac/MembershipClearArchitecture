@@ -1,22 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Membership.Core.Controllers;
 
-namespace Membership.Core.Controllers
+internal class RegisterController : IRegisterController
 {
-    internal class RegisterController : IRegisterController
+    readonly IRegisterInputPort registerInputPort;
+
+    public RegisterController(IRegisterInputPort registerInputPort)
     {
-        readonly IRegisterInputPort registerInputPort;
-
-        public RegisterController(IRegisterInputPort registerInputPort)
-        {
-            this.registerInputPort = registerInputPort;
-        }
-
-        public Task RegisterAsync(UserDto userDto)=>
-            registerInputPort.RegisterAsync(userDto);
-        
+        this.registerInputPort = registerInputPort;
     }
+
+    public Task RegisterAsync(UserDto userDto)=>
+        registerInputPort.RegisterAsync(userDto);
+    
 }
